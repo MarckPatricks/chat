@@ -5,7 +5,7 @@ import Chat from "./pages/chat";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import io from "socket.io-client";
 
-const socket = io.connect("http://localhost:4000"); //El servidor correra en el puerto 4000, asi lo conectamos
+const socket = io.connect("https://marcky-server.onrender.com"); //El servidor correra desde render aqui, asi lo conectamos
 
 function App() {
   const [username, setUsername] = useState("");
